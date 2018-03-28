@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="@dimen/activity_vertical_margin"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/body"
+        android:background="#2555"/>
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/body"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/head"
+        android:background="#2f00" />
+
+    <ImageView
+        android:id="@+id/right_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_toRightOf="@id/body"
+        android:src="@drawable/hand"
+        android:background="#5ff0" />
+
+    <ImageView
+        android:id="@+id/left_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_toLeftOf="@id/body"
+        android:src="@drawable/hand"
+        android:background="#5ff0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/right_leg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/leg"
+            android:background="#5f0f" />
+
+        <ImageView
+            android:id="@+id/left_leg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/right_leg"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/leg"
+            android:background="#5f0f" />
+    </RelativeLayout>
+
+</RelativeLayout>

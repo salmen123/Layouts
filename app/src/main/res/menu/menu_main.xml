@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_relative"
+        android:orderInCategory="100"
+        android:icon="@drawable/relative"
+        app:showAsAction="ifRoom"
+        android:title="Relative"/>
+    <item
+        android:id="@+id/action_linear"
+        android:orderInCategory="100"
+        android:icon="@drawable/linear"
+        app:showAsAction="ifRoom"
+        android:title="Linear"/>
+    <item
+        android:id="@+id/action_constraint"
+        android:orderInCategory="100"
+        android:icon="@drawable/constraint"
+        app:showAsAction="ifRoom"
+        android:title="Constraint"/>
+</menu>
